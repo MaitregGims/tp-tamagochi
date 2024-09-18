@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="loading-screen hidden">
+            <div class="loader"></div> 
+        </div>
+
+        <div class="choose-pet">
+            <div class="choose">
+                <img src="./assets/img/sherry.jpg" alt="" id="sherry" class="char">
+                <img src="./assets/img/shanny.jpg" alt="" id="shanny" class="char">
+                <img src="./assets/img/phillibert.jpg" alt="" id="phillibert" class="char">
+                <img src="./assets/img/samba.jpg" alt="" id="samba" class="char">
+            </div>
+
+            <form class="actions">
+                <p class="name"></p>
+                <button class="choose">choose ?</button>
+            </form>
+        </div>
+
+        <div class="play hidden">
+            <img src="" alt="" id="" class="play-img">
+
+            <div class="stat">
+                <div class="stats">
+                    <p class="statsID">joie</p>
+                    <p class="stats-indic joie-nb">0</p>
+                    <div id="humeur"></div>
+                </div>
+                <div class="stats">
+                    <p class="statsID">faim</p>
+                    <p class="stats-indic faim-nb">0</p>
+                    <div id="faim"></div>
+                </div>
+                <div class="stats">
+                    <p class="statsID">fatigue</p>
+                    <p class="stats-indic fatigue-nb">0</p>
+                    <div id="fatigue"></div>
+                </div>
+            </div>
+
+            <div class="interactions">
+
+                <form id="interaction">
+                    <select name="interaction" id="pet-interact">
+                        <option value="">--Please choose an option--</option>
+                        <option value="calin">calin</option>
+                        <option value="caresse">caresse</option>
+                        <option value="jouer">jouer</option>
+                      </select>
+
+                      <button class="intercat">interact</button>
+                </form>
+
+
+                <form id="nouriture">
+                    <select name="food" id="pet-food">
+                        <option value="">--Please choose an option--</option>
+                        <option value="croquette">croquette</option>
+                        <option value="paté">paté</option>
+                        <option value="graines">graines</option>
+                        <option value="friandise">friandise</option>
+                        <option value="???">iron elixir</option>
+                      </select>
+
+                      <button class="feed">nourrir</button>
+                </form>
+
+                
+                <form id="activité">
+                    <select name="activities" id="pet-activities">
+                        <option value="">--Please choose an option--</option>
+                        <option value="promenade">promenade</option>
+                        <option value="voler">voler</option>
+                        <option value="dormir">dormir</option>
+                      </select>
+
+                      <button class="launch">lancer</button>
+                </form>
+
+
+                <div class="dialogues">
+                    <p class="dialogues-text">...</p>
+                    <button id="surrender">surrender ?</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="loose-screen hidden">
+            <h1>game over.</h1>
+            <p class="why"></p>
+            <a href="./index.html">go back to main menu.</a>
+        </div>
+    </main>
+</body>
+
+    <script src="./assets/js/app.js"></script>
+</html>
+
+<script>alert('sqlproof')</script>
